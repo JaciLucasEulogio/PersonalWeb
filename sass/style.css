@@ -9,6 +9,11 @@
   padding: 0px 0%;
 }
 
+#aboutstudies{
+  margin-top: 10vh;
+  height: 50vh;
+}
+
 nav {
   display: flex;
   align-items: center;

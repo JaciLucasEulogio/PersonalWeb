@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Viaje a México</title>
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <title>Travel</title>
         <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-        <link rel="stylesheet" href="/sass/style.css" />
-        <link rel="stylesheet" href="/mediaqueries.css" />
+        <link rel="stylesheet" href="../../sass/style.css" />
+        <link rel="stylesheet" href="../../mediaqueries.css" />
     </head>
     <body>
         <div class="absolute top-0 -z-10 h-full w-full bg-white">
@@ -23,20 +22,20 @@
                 <nav id="desktop-nav">
                     <img
                         id="logo"
-                        src="/public/img/logo.png"
+                        src="../img/logo.png"
                         alt="logo i'm not Lucas"
                     />
                     <ul>
-                        <li><a href="/index.html#about">About</a></li>
-                        <li><a href="/public/pages/studies.html">Study</a></li>
-                        <li><a href="/public/pages/travel.html">Travel</a></li>
-                        <li><a href="/index.html#contact">Contact</a></li>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="./studies.html">Study</a></li>
+                        <li><a href="./travel.html">Travel</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <nav id="hamburger-nav">
                     <img
                         id="logo"
-                        src="/public/img/logo.png"
+                        src="../img/logo.png"
                         alt="logo i'm not Lucas"
                     />
                     <div class="hamburger-menu">
@@ -47,14 +46,14 @@
                         </div>
                         <div class="menu-links">
                             <li>
-                                <a href="#experience" onclick="toggleMenu()"
+                                <a
+                                    href="../../index.html#about"
+                                    onclick="toggleMenu()"
                                     >About</a
                                 >
                             </li>
                             <li>
-                                <a
-                                    href="/public/pages/studies.html"
-                                    onclick="toggleMenu()"
+                                <a href="./studies.html" onclick="toggleMenu()"
                                     >Study</a
                                 >
                             </li>
@@ -64,7 +63,9 @@
                                 >
                             </li>
                             <li>
-                                <a href="#contact" onclick="toggleMenu()"
+                                <a
+                                    href="../../index.html#contact"
+                                    onclick="toggleMenu()"
                                     >Contact</a
                                 >
                             </li>
@@ -82,7 +83,7 @@
                     <div class="about-containers">
                         <div class="details-container">
                             <img
-                                src="/public/img/location.png"
+                                src="../img/location.png"
                                 alt="Location icon"
                                 class="icon"
                             />
@@ -91,7 +92,7 @@
                         </div>
                         <div class="details-container">
                             <img
-                                src="/public/img/education.png"
+                                src="../img/education.png"
                                 alt="Education icon"
                                 class="icon"
                             />
@@ -124,7 +125,7 @@
                 </div>
             </div>
             <img
-                src="/public/img/arrow.png"
+                src="../img/arrow.png"
                 alt="Arrow icon"
                 class="icon arrow"
                 onclick="location.href='./#experience'"
@@ -142,7 +143,7 @@
                         <div class="article-container">
                             <article>
                                 <img
-                                    src="/public/img/checkmark.png"
+                                    src="../img/checkmark.png"
                                     alt="Experience icon"
                                     class="icon"
                                 />
@@ -161,7 +162,7 @@
                         <div class="article-container">
                             <article>
                                 <img
-                                    src="/public/img/checkmark.png"
+                                    src="../img/checkmark.png"
                                     alt="Experience icon"
                                     class="icon"
                                 />
@@ -180,7 +181,7 @@
                     <!-- Imagen 1 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/4.jpeg"
+                            src="../img/travel/4.jpeg"
                             alt="Imagen 1"
                             class="h-auto w-full object-cover rounded-lg shadow-md"
                         />
@@ -188,7 +189,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/4.jpeg"
+                                href="./public/img/travel/4.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -199,7 +200,7 @@
                     <!-- Imagen 2 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/2.jpeg"
+                            src="../img/travel/2.jpeg"
                             alt="Imagen 2"
                             class="h-auto w-auto object-cover rounded-lg shadow-md"
                         />
@@ -207,7 +208,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/2.jpeg"
+                                href="./public/img/travel/2.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -218,7 +219,7 @@
                     <!-- Imagen 3 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/6.jpeg"
+                            src="../img/travel/6.jpeg"
                             alt="Imagen 2"
                             class="h-auto w-auto object-cover rounded-lg shadow-md"
                         />
@@ -226,7 +227,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/6.jpeg"
+                                href="./public/img/travel/6.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -237,7 +238,7 @@
                     <!-- Imagen 4 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/3.jpeg"
+                            src="../img/travel/3.jpeg"
                             alt="Imagen 2"
                             class="h-auto w-auto object-cover rounded-lg shadow-md"
                         />
@@ -245,7 +246,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/3.jpeg"
+                                href="./public/img/travel/3.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -256,7 +257,7 @@
                     <!-- Imagen 5 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/5.jpeg"
+                            src="../img/travel/5.jpeg"
                             alt="Imagen 2"
                             class="h-auto w-auto object-cover rounded-lg shadow-md"
                         />
@@ -264,7 +265,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/5.jpeg"
+                                href="./public/img/travel/5.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -275,7 +276,7 @@
                     <!-- Imagen 6 -->
                     <div class="relative">
                         <img
-                            src="/public/img/travel/1.jpeg"
+                            src="../img/travel/1.jpeg"
                             alt="Imagen 2"
                             class="h-auto w-auto object-cover rounded-lg shadow-md"
                         />
@@ -283,7 +284,7 @@
                             class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300 bg-black bg-opacity-50 rounded-lg"
                         >
                             <a
-                                href="/public/img/travel/1.jpeg"
+                                href="./public/img/travel/1.jpeg"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="text-white text-lg"
@@ -294,7 +295,7 @@
                 </div>
             </div>
             <img
-                src="/public/img/arrow.png"
+                src="../img/arrow.png"
                 alt="Arrow icon"
                 class="icon arrow"
                 onclick="location.href='./#contact'"
@@ -306,7 +307,7 @@
             <div class="contact-info-upper-container">
                 <div class="contact-info-container">
                     <img
-                        src="/public/img/email.png"
+                        src="../img/email.png"
                         alt="Email icon"
                         class="icon contact-icon email-icon"
                     />
@@ -318,7 +319,7 @@
                 </div>
                 <div class="contact-info-container">
                     <img
-                        src="/public/img/linkedin.png"
+                        src="../img/linkedin.png"
                         alt="LinkedIn icon"
                         class="icon contact-icon"
                     />
@@ -329,6 +330,6 @@
         <footer>
             <p>Copyright &#169; 2024 Jaci Lucas. All Rights Reserved.</p>
         </footer>
-        <script src="/public/js/script.js"></script>
+        <script src="../js/script.js"></script>
     </body>
 </html>

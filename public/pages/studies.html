@@ -3,16 +3,181 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-        />
-        <title>Document</title>
+        <title>Studies</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <link rel="stylesheet" href="../../sass/style.css" />
+        <link rel="stylesheet" href="../../mediaqueries.css" />
     </head>
-
     <body>
+        <div class="absolute top-0 -z-10 h-full w-full bg-white">
+            <div
+                class="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]"
+            ></div>
+        </div>
         <div
-            class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
-        ></div>
+            id="header"
+            class="relative mx-auto h-screen w-full max-w-7xl px-6 md:px-8 lg:px-12"
+        >
+            <div class="container">
+                <nav id="desktop-nav">
+                    <img
+                        id="logo"
+                        src="../img/logo.png"
+                        alt="logo i'm not Lucas"
+                    />
+                    <ul>
+                        <li><a href="../../index.html#about">About</a></li>
+                        <li><a href="./studies.html">Study</a></li>
+                        <li><a href="./travel.html">Travel</a></li>
+                        <li><a href="../../index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav id="hamburger-nav">
+                    <img
+                        id="logo"
+                        src="../img/logo.png"
+                        alt="logo i'm not Lucas"
+                    />
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="menu-links">
+                            <li>
+                                <a
+                                    href="../../index.html#about"
+                                    onclick="toggleMenu()"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a href="./studies.html" onclick="toggleMenu()"
+                                    >Study</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#projects" onclick="toggleMenu()"
+                                    >Travel</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="../../index.html#contact"
+                                    onclick="toggleMenu()"
+                                    >Contact</a
+                                >
+                            </li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <section id="aboutstudies">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About My Studies</h1>
+            <div class="section-container">
+                <div class="about-details-container">
+                    <div class="text-container">
+                        <p>
+                            I had different knowledge in the field of software.
+                            Thanks to God and my effort, I was able to win
+                            differents scholarships to be able to study in the
+                            program Tech Academy of Falabella. Also i had the
+                            orportunity to participate in differents volunteer
+                            programs in the field of software and other areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="../img/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#experience'"
+            />
+        </section>
+        <section class="h-auto" id="experience">
+            <p class="section__text__p1">Explore Some</p>
+            <h1 class="title">Certificates and awards</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            FullStack Developer
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="../img/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>CoderHouse</h3>
+                                    <p>2024</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">
+                            Cybersecurity Essentials Certificate
+                        </h2>
+                        <div class="article-container">
+                            <article>
+                                <img
+                                    src="../img/checkmark.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Cisco</h3>
+                                    <p>2023</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img
+                src="../img/arrow.png"
+                alt="Arrow icon"
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+        <section class="mt-20" id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img
+                        src="../img/email.png"
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p>
+                        <a href="mailto:72617519@continental.edu.pe"
+                            >72617519@continental.edu.pe</a
+                        >
+                    </p>
+                </div>
+                <div class="contact-info-container">
+                    <img
+                        src="../img/linkedin.png"
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &#169; 2024 Jaci Lucas. All Rights Reserved.</p>
+        </footer>
+        <script src="../js/script.js"></script>
     </body>
 </html>
